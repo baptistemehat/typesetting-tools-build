@@ -1,0 +1,20 @@
+services:
+  typesetting-tools:
+    container_name: typesetting
+    build:
+      dockerfile: Dockerfile
+      tags: 
+        - baptistemehat/typesetting-tools:1.1.0
+        - baptistemehat/typesetting-tools:latest
+
+
+    volumes:
+      - .:/typesetting/
+
+    working_dir: /typesetting
+
+    # Interactive shell
+    stdin_open: true 
+    tty: true
+
+
