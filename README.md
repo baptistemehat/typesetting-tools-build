@@ -42,12 +42,12 @@ tags:
     - baptistemehat/typesetting-tools:latest
 ```
 2. Build the image:
-```
+```sh
 docker compose build
 ```
 
 3. Push the image:
-```
+```sh
 docker push docker.io/baptistemehat/typesetting-tools:<version x.y.z>
 docker push docker.io/baptistemehat/typesetting-tools:latest
 ```
